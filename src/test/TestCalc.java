@@ -6,18 +6,17 @@ import org.junit.Before;
 import org.junit.Test;
 import code.Calc;;
 public class TestCalc {
-
+	Calc obj=new Calc();
 	@Before
 	public void setUp() throws Exception {
+		Calc obj=new Calc();
 	}
 
-	@After
-	public void tearDown() throws Exception {
-	}
+	
 
 	@Test
 	public void test() {
-		Calc obj=new Calc();
+		
 		assertEquals(5, obj.add(2,3));
 	}
 
