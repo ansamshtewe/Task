@@ -14,7 +14,22 @@ public class TestCalc {
 	}
 
 	@Test
-	public void test() {
+	public void test0() {
+		
+		assertEquals(5, obj.add(2,3));
+	}
+	@Test
+	public void test1() {
+		
+		assertEquals(5, obj.add(2,3));
+	}
+	@Test
+	public void test2() {
+		
+		assertEquals(5, obj.add(2,3));
+	}
+	@Test
+	public void test3() {
 		
 		assertEquals(5, obj.add(2,3));
 	}
