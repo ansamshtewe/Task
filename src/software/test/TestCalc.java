@@ -26,7 +26,7 @@ public class TestCalc {
 	}
 
 	@Test
-	public void test0() {
+	public void test0() { 
 		
 		assertEquals(5, obj.add(2,3));
 	}
