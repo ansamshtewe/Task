@@ -18,6 +18,7 @@ public class TestCalc {
 	public void test0() { 
 		 
 		assertEquals(5, Calc.add(2,3));
+		int result = Calc.add(3,2) ;
 	}
 	@Test
 	public void test1() {
