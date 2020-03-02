@@ -16,12 +16,12 @@
 	<target name="compile">
 	    <mkdir dir="${classCode}"/>
 	    <mkdir dir="${resultJavaClasses}"/>
-		<javac srcdir="${srcCode}" destdir="${resultJavaClasses}" debug="true"  includeantruntime="false"/>
+		<javac srcdir="${srcCode}" destdir="${resultJavaClasses}" debug="true"  includeantruntime="true"/>
 	</target>
 
 	<target name="compile-testcases" depends="compile">
 	        <mkdir dir="${resultTestClasses}"/>
-	        <javac srcdir="${srcTest}"  destdir="${resultTestClasses}" debug="true" includeantruntime="false">
+	        <javac srcdir="${srcTest}"  destdir="${resultTestClasses}" debug="true" includeantruntime="true">
 	            <classpath>
 	                <path refid="NecessaryLibraries"/>
 	                <pathelement location="${resultJavaClasses}"/>

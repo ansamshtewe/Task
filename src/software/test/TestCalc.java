@@ -27,12 +27,12 @@ public class TestCalc {
 	@Test
 	public void test2() {
 		 
-		assertEquals(5, obj.add(2,3)); 
+		assertEquals(-5, obj.add(-2,-3)); 
 	}
 	@Test
 	public void test3() {
 		
-		assertEquals(5, obj.add(2,3));
+		assertEquals(1, obj.add(-2,3));
 	}
 
 }
