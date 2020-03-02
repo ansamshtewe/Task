@@ -11,29 +11,54 @@ public class TestCalc {
 	@Before
 	public void setUp() throws Exception {
 		Calc obj=new Calc();
+		
 	}
-	
+	int x ;
+	int y ;
+	int result ;
 	
 	@Test
 	public void test0() { 
-		 
-		assertEquals(5, Calc.add(2,3));
-		int result = Calc.add(3,2) ;
+		
+		x= -2 ;
+		y = 3 ;
+		result = Calc.add(x,y) ;
+		assertEquals(x+y, result);
+		System.out.println(result + "=" + x + "+" + y);
+		
 	}
+	
 	@Test
 	public void test1() {
 		
-		assertEquals(0, Calc.add(-2,2));
+		x= 2 ;
+		y = 3 ;
+		result = Calc.add(x,y) ;
+		assertEquals(x+y, result);
+		System.out.println(result + "=" + x + "+" + y);
+		
 	}
+	
 	@Test
 	public void test2() {
 		 
-		assertEquals(-5, Calc.add(-2,-3)); 
+		x= -2 ;
+		y = -3 ;
+		result = Calc.add(x,y) ;
+		assertEquals(x+y, result);
+		System.out.println(result + "=" + x + "+" + y);
+		
 	}
+	
 	@Test
 	public void test3() {
 		
-		assertEquals(1, Calc.add(-2,3));
+		x= 2 ;
+		y = -2 ;
+		result = Calc.add(x,y) ;
+		assertEquals(x+y, result);
+		System.out.println(result + "=" + x + "+" + y);
+		
 	}
 
 }

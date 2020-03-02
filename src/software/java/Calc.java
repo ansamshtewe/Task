@@ -9,6 +9,7 @@ public class Calc {
 		// TODO Auto-generated method stub
 		
 		System.out.println(add(2,3));
+		
 
 	}
 
